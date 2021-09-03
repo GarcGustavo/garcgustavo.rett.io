@@ -10,5 +10,5 @@ cd dist
 #git init
 git add -A
 git commit -m 'deploy'
-git push -f git@https://github.com/GarcGustavo/garcgustavo.rett.io master:master
+git push -f git@https://github.com/GarcGustavo/garcgustavo.rett.io
 cd -
