@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+!/usr/bin/env sh
 # abort on errors
 set -e
 # build
@@ -10,5 +10,5 @@ echo 'www.gustavoreyes.io' > CNAME
 #git init
 git add -A
 git commit -m 'deploy'
-git push -f ssh://github.com/GarcGustavo/garcgustavo.rett.io main:gh-pages
+git push -f main:gh-pages
 cd -
