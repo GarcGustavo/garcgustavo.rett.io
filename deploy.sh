@@ -10,5 +10,5 @@ echo 'www.gustavoreyes.io' > CNAME
 #git init
 git add -A
 git commit -m 'deploy'
-git push -f main:gh-pages
+git push -f
 cd -
