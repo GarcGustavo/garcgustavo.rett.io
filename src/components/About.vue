@@ -16,20 +16,17 @@
       >
         <span
           class="title text-center"
-          :class="{ pgray: nightMode, 'text-light': nightMode }"
+          :class="{ pgray: nightMode, 'text-light': !nightMode }"
           >About</span
         >
-      </div>
       <hr
         width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
+        :class="{ pgray: !nightMode, 'bg-secondary': !nightMode }"
       />
-      <div class="row">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
-          <Timeline :data="education" :nightMode="nightMode" />
-        </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
-          <Timeline :data="experience" :nightMode="nightMode" />
+        <div class="text-center">
+            <span v-html="education.data"
+            :class="{ pgray: nightMode, 'text-light': !nightMode }" 
+            ></span>
         </div>
       </div>
     </div>
@@ -37,13 +34,12 @@
 </template>
 
 <script>
-import Timeline from "./helpers/Timeline";
 import info from "../../info";
 
 export default {
   name: "About",
   components: {
-    Timeline,
+    //Timeline,
   },
   props: {
     nightMode: {
@@ -53,8 +49,7 @@ export default {
   data() {
     return {
       education: {
-        title: "Education",
-        data: info.education,
+        data: info.description,
       },
     };
   },
