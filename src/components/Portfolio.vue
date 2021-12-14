@@ -2,9 +2,9 @@
   <div
     class="py-4 p-st"
     :class="{
-      'bg-light': !nightMode,
-      'bg-dark2': nightMode,
-      'text-light': nightMode,
+      'bg-light': nightMode,
+      'bg-dark2': !nightMode,
+      'text-light': !nightMode,
     }"
   >
     <div class="container">
@@ -16,7 +16,6 @@
       >
         <span
           class="title text-center"
-          :class="{ pgray: !nightMode, 'text-light': nightMode }"
           >Portfolio</span
         >
       </div>
@@ -39,7 +38,7 @@
                 :portfolio="portfolio"
                 @show="showModalFn"
                 data-aos="fade-up"
-                :nightMode="nightMode"
+                :nightMode="!nightMode"
                 data-aos-offset="100"
                 data-aos-delay="10"
                 data-aos-duration="500"

@@ -2,9 +2,9 @@
   <div
     class="py-4 p-st"
     :class="{
-      'bg-light': !nightMode,
-      'bg-dark2': nightMode,
-      'text-light': nightMode,
+      'bg-light': nightMode,
+      'bg-dark2': !nightMode,
+      'text-light': !nightMode,
     }"
   >
     <div class="container">
@@ -16,7 +16,7 @@
       >
         <span
           class="title text-center"
-          :class="{ pgray: !nightMode, 'text-light': nightMode }"
+          :class="{ pgray: nightMode, 'text-light': nightMode }"
           >About</span
         >
       </div>
@@ -53,7 +53,7 @@ export default {
   data() {
     return {
       education: {
-        title: "education",
+        title: "Education",
         data: info.education,
       },
     };

@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
+  <div :class="{ 'bg-white': nightMode, 'bg-dark': !nightMode }" class="p-st">
     <div class="container py-4">
       <div
         class="text-center"
@@ -9,13 +9,13 @@
       >
         <span
           class="title text-center"
-          :class="{ pgray: !nightMode, 'text-light': nightMode }"
+          :class="{ pgray: nightMode, 'text-light': !nightMode }"
           >Skills</span
         >
       </div>
       <hr
         width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
+        :class="{ pgray: nightMode, 'bg-secondary': !nightMode }"
       />
       <br />
       <div class="row">
@@ -27,6 +27,7 @@
           data-aos-offset="10"
           data-aos-delay="30"
           :style="{ 'transition-delay': idx / 4.2 + 's' }"
+          :class="{ pgray: nightMode, 'text-light': !nightMode }"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
@@ -36,7 +37,7 @@
           <div class="title2 pt-2">{{ skill.title }}</div>
           <hr
             width="50%"
-            :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
+            :class="{ pgray: nightMode, 'bg-secondary': !nightMode }"
           />
           <span class="title3">{{ skill.info.join(", ") }}</span>
         </div>

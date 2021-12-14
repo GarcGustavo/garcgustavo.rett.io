@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
+    :class="{ 'bg-white': nightMode, 'bg-dark': !nightMode }"
     class="pt-5 p-st"
   >
     <div
@@ -11,16 +11,20 @@
     >
       <div class="row align-items-center">
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-          <img :src="picture" />
+          <img class="rounded-circle mx-auto mt-auto mb-auto" :src="picture" />
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
           <span
-            class="home-title"
-            :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >Welcome!</span
-          >
+            class="home-title font-weight-bold"
+            :class="{ pgray: !nightMode, 'text-light': !nightMode }"
+            >Gustavo A. Reyes Carrion</span>
+          <p
+            class="home-title-sub"
+            :class="{ pgray: !nightMode, 'text-light': !nightMode }"
+            >Software Engineer</p>
           <div>
-            <p v-html="description"></p>
+            <p v-html="description"
+            :class="{ pgray: !nightMode, 'text-light': !nightMode }"></p>
           </div>
           <div class="text-center pb-4">
             <button
@@ -86,6 +90,10 @@ export default {
 <style scoped>
 .home-title {
   font-size: 32px;
+  font-weight: 500;
+}
+.home-title-sub {
+  font-size: 24px;
   font-weight: 500;
 }
 

@@ -1,6 +1,6 @@
 let info = {
   name: "Gustavo A. Reyes",
-  logo_name: "Gustavo",
+  logo_name: "Gustavo Reyes",
   flat_picture: require("./src/assets/shibe.jpeg"),
   config: {
     use_cookies: true,
