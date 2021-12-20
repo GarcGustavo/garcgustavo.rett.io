@@ -130,26 +130,13 @@
 import Card from "./helpers/Card";
 import Modal from "./helpers/Modal";
 import DesignModal from "./helpers/DesignModal";
-//import Carousel from "./helpers/Carousel";
 import info from "../../info";
-
-/*
-import { VueTabs, VTab } from "vue-nav-tabs";
-import "vue-nav-tabs/themes/vue-tabs.css";
-
-import { VueperSlides, VueperSlide } from "vueperslides";
-import "vueperslides/dist/vueperslides.css";
-*/
 
 export default {
   name: "Portfolio",
   components: {
     Card,
     Modal,
-    //VueTabs,
-    //VTab,
-    //VueperSlides,
-    //VueperSlide,
     DesignModal,
   },
   props: {

@@ -1,13 +1,14 @@
 let info = {
   name: "Gustavo A. Reyes",
   logo_name: "Gustavo Reyes",
-  flat_picture: require("./src/assets/shibe.jpeg"),
+  flat_picture: require("./src/assets/profile.png"),
   config: {
     use_cookies: true,
     navbar: {
       blur: false
     }
   },
+  email: "greyescarrion@gmail.com",
   description:
     "My name is Gustavo, I'm a software engineer and full-stack web developer. This website is meant to serve as a portfolio and devlog for my latest projects. Feel free to contact me with any questions or work inquiries.",
   links: {
@@ -43,7 +44,7 @@ let info = {
     },
     {
       title: "Back-end",
-      info: ["SQL", "MySQL", "Node"],
+      info: ["SQL", "MySQL", "Node", "PostgreSQL"],
       icon: "fas fa-laptop-code"
     }
   ],

@@ -1,11 +1,6 @@
 <template>
   <div
-    class="py-4 p-st"
-    :class="{
-      'bg-light': nightMode,
-      'bg-dark2': !nightMode,
-      'text-light': !nightMode,
-    }"
+    class="py-4 p-st bg-light bg-dark2 text-light"
   >
     <div class="container">
       <div
@@ -14,18 +9,13 @@
         data-aos-once="true"
         data-aos-duration="1000"
       >
-        <span
-          class="title text-center"
-          :class="{ pgray: nightMode, 'text-light': !nightMode }"
-          >About</span
+        <span class="title"> About </span
         >
       <hr
         width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': !nightMode }"
       />
-        <div class="text-center">
-            <span v-html="education.data"
-            :class="{ pgray: nightMode, 'text-light': !nightMode }" 
+        <div class="text-center mb-5">
+            <span v-html="about.data"
             ></span>
         </div>
       </div>
@@ -48,7 +38,7 @@ export default {
   },
   data() {
     return {
-      education: {
+      about: {
         data: info.description,
       },
     };

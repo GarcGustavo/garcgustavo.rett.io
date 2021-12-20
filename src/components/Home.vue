@@ -1,6 +1,5 @@
 <template>
   <div
-    :class="{ 'bg-white': nightMode, 'bg-dark': !nightMode }"
     class="pt-5 p-st"
   >
     <div
@@ -9,33 +8,27 @@
       data-aos-once="true"
       data-aos-duration="1000"
     >
-      <div class="row align-items-center">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
+      <div class="row align-items-center container-bg">
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center mt-4 mb-4">
           <img class="rounded-circle mx-auto mt-auto mb-auto" :src="picture" />
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
-          <span
-            class="home-title font-weight-bold"
-            :class="{ pgray: !nightMode, 'text-light': !nightMode }"
-            >Gustavo A. Reyes Carrion</span>
-          <p
-            class="home-title-sub"
-            :class="{ pgray: !nightMode, 'text-light': !nightMode }"
-            >Software Engineer</p>
-          <div>
-            <p v-html="description"
-            :class="{ pgray: !nightMode, 'text-light': !nightMode }"></p>
+          <span class="home-title font-weight-bold"> Gustavo A. Reyes Carrion</span>
+          <p class="home-title-sub"> Software Engineer</p>
+          <div class="row mx-auto">
+            <p class="mb-0 mr-3"> Contact: </p>
+            <p v-html="email"></p>
           </div>
-          <div class="text-center pb-4">
+          <div class="text-left pb-4">
             <button
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mt-2 mr-3"
               @click="open('linkedin')"
               v-tooltip.bottom="'LinkedIn'"
             >
               <i class="fab fa-linkedin"></i>
             </button>
             <button
-              class="btn btn-outline-secondary mx-2"
+              class="btn btn-outline-secondary mt-2 mx-2"
               @click="open('github')"
               v-tooltip.bottom="'GitHub'"
             >
@@ -51,23 +44,16 @@
 <script>
 import info from "../../info";
 
-//import Wave from "./helpers/Wave";
-
 export default {
   name: "Home",
   components: {
-    //Wave,
-  },
-  props: {
-    nightMode: {
-      type: Boolean,
-    },
   },
   data() {
     return {
       picture: info.flat_picture,
       description: info.description,
       name: info.name,
+      email: info.email,
       linkedin: info.links.linkedin,
       github: info.links.github
     };
@@ -88,6 +74,14 @@ export default {
 </script>
 
 <style scoped>
+.container-bg {
+  background-color:#262c30;
+  border-color:dimgray;
+  border-style: solid;
+  border-radius: 2%;
+  margin-inline: 100px;
+}
+
 .home-title {
   font-size: 32px;
   font-weight: 500;

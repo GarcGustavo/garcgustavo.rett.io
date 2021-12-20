@@ -16,19 +16,6 @@
         >
           <Logo :nightMode="!nightMode" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span style="color: gray; font-size: 23px;"
-            ><i class="fas fa-bars"></i>
-            </span>
-        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
@@ -87,10 +74,6 @@ export default {
     Logo,
   },
   methods: {
-    switchMode() {
-      this.localNightMode = !this.localNightMode;
-      this.$emit("nightMode", this.localNightMode);
-    },
   },
 };
 </script>

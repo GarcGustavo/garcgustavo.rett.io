@@ -1,14 +1,18 @@
 <template>
-  <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
-    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
-    <div class="parent">
-      <Home :nightMode="nightMode" />
-      <About id="about" :nightMode="nightMode" />
-      <Skills id="skills" :nightMode="nightMode" />
-      <Portfolio id="portfolio" :nightMode="nightMode" />
-      <Contact id="contact" :nightMode="nightMode" />
-      <Footer :nightMode="nightMode" />
+  <div id="app">
+    <div class="parent row d-flex justify-content-center">
+    <Navbar @scroll="scrollTo"/>
+    <particles-bg type="cobweb" color="#00ccff" style="background-color: #262c30" :num=300 :bg="true"/>
+      <div class="parent col-md-8 mb-5">
+        <Home class="mt-5 mb-5"/>
+        <div class="body">
+          <About id="about"/>
+          <Skills id="skills"/>
+          <Portfolio id="portfolio"/>
+        </div>
+      </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -18,10 +22,9 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
-//import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 import info from "../info";
+import { ParticlesBg } from "particles-bg-vue";
 
 export default {
   name: "App",
@@ -31,8 +34,8 @@ export default {
     About,
     Skills,
     Portfolio,
-    //Contact,
     Footer,
+    ParticlesBg
   },
   data() {
     return {
@@ -46,7 +49,7 @@ export default {
     }
   },
   mounted() {
-    ["about", "contact", "skills", "portfolio"].forEach((l) => {
+    ["about", "skills", "portfolio"].forEach((l) => {
       if (window.location.href.includes(l)) {
         var elementPosition = document.getElementById(l).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
@@ -80,7 +83,7 @@ export default {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #c5c5c5;
   width: 100%;
 }
 
@@ -90,10 +93,16 @@ export default {
   }
 }
 
+.body {
+  border-color:dimgray;
+  border-style: solid;
+}
+
 .parent {
-  margin-top: 38px;
-  padding-top: 40px;
+  margin-top: 28px;
+  padding-top: 20px;
   position: relative;
+  margin: auto;
 }
 
 .pgray {
