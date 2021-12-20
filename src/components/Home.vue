@@ -78,7 +78,6 @@ export default {
   background-color:#262c30;
   border-color:dimgray;
   border-style: solid;
-  border-radius: 2%;
   margin-inline: 100px;
 }
 
