@@ -91,7 +91,7 @@ export default {
 .body {
   border-color:dimgray;
   border-style: solid;
-  opacity: 90%
+  opacity: 99%
 }
 
 .parent {
