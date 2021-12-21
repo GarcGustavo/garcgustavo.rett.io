@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="parent row d-flex justify-content-center">
     <Navbar @scroll="scrollTo"/>
+    <div class="parent row d-flex justify-content-center">
     <particles-bg type="cobweb" color="#00ccff" style="background-color: #262c30" :num=300 :bg="true"/>
       <div class="parent col-md-8 mb-5">
         <Home class="mt-5 mb-5"/>
@@ -42,11 +42,6 @@ export default {
       nightMode: false,
       config: info.config,
     };
-  },
-  created() {
-    if (this.config.use_cookies) {
-      this.nightMode = this.$cookie.get("nightMode") === "true" ? true : false;
-    }
   },
   mounted() {
     ["about", "skills", "portfolio"].forEach((l) => {
@@ -96,6 +91,7 @@ export default {
 .body {
   border-color:dimgray;
   border-style: solid;
+  opacity: 90%;
 }
 
 .parent {

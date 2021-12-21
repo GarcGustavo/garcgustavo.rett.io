@@ -13,9 +13,9 @@
         >
       <hr
         width="50%"
-        class="bg-secondary"
+        class="bg-secondary align-center"
       />
-        <div class="text-center mb-5">
+        <div class="text-center mx-auto mt-5 mb-5 col-md-8">
             <span v-html="about.data"
             ></span>
         </div>

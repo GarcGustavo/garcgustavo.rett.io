@@ -1,12 +1,7 @@
 <template>
   <div>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-st"
-      :class="{
-        'bg-light': nightMode,
-        'navbar-blur': navbarConfig.blur,
-        'bg-dark2': !nightMode,
-      }"
+      class="navbar navbar-expand-lg navbar-light bg-dark2 fixed-top p-st navbar-blur"
     >
       <div class="container">
         <a

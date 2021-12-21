@@ -8,15 +8,15 @@
       data-aos-once="true"
       data-aos-duration="1000"
     >
-      <div class="row align-items-center container-bg">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center mt-4 mb-4">
-          <img class="rounded-circle mx-auto mt-auto mb-auto" :src="picture" />
+      <div class="row align-items-center container-bg mr-5">
+        <div class="col-xl-5 col-bg-5 col-md-5 col-sm-6 text-center mt-4 mb-4">
+          <img class="rounded-circle ml-5 mt-auto mb-auto" :src="picture" />
         </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-6 mx-auto pt-2">
           <span class="home-title font-weight-bold"> Gustavo A. Reyes Carrion</span>
           <p class="home-title-sub"> Software Engineer</p>
-          <div class="row mx-auto">
-            <p class="mb-0 mr-3"> Contact: </p>
+          <div class="row mx-auto mt-0 mb-2">
+            <p class="mb-0 mr-3"> Email: </p>
             <p v-html="email"></p>
           </div>
           <div class="text-left pb-4">

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-secondary">
+  <div class="bg-secondary bg-dark2 fixed-bot p-st navbar-blur footer">
     <div class="container py-3">
       <div class="row pt-1 align-items-center">
         <div
@@ -7,7 +7,6 @@
           style="color: white;"
         >
         </div>
-
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
           <div class="text-center">
             <button
@@ -56,7 +55,11 @@ export default {
 </script>
 
 <style scoped>
-span {
+.footer {
+  border-top: 1px solid rgba(160, 159, 159, 0.336);
+}
+
+.span {
   font-weight: 500;
 }
 

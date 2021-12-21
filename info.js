@@ -10,7 +10,10 @@ let info = {
   },
   email: "greyescarrion@gmail.com",
   description:
-    "My name is Gustavo, I'm a software engineer and full-stack web developer. This website is meant to serve as a portfolio and devlog for my latest projects. Feel free to contact me with any questions or work inquiries.",
+    "My name is Gustavo, I'm a software engineer and full-stack web developer based in NY. \
+    This website is meant to serve as a portfolio and devlog for my latest projects. \
+    I intend to fill out this portfolio with a variety of projects, mostly as practice \
+    for new concepts I want to learn. Feel free to contact me if you're interested in my work.",
   links: {
     linkedin: "https://www.linkedin.com/in/gustavo-reyes-886423129/",
     github: "https://github.com/GarcGustavo"
