@@ -36,15 +36,21 @@ let info = {
     {
       title: "Frameworks",
       info: [
-        "VueJS",
-        "React",
-        "Node",
-        "Django"],
+        "Vue.js",
+        "React.js",
+        "Bootstrap",
+        "Unity"
+      ],
       icon: "fa fa-cubes"
     },
     {
-      title: "Back-end",
-      info: ["SQL", "MySQL", "Node", "PostgreSQL"],
+      title: "Backend",
+      info: [
+        "Node.js",
+        "Django",
+        ".NET",
+        "MySQL", 
+        "PostgreSQL"],
       icon: "fas fa-laptop-code"
     }
   ],

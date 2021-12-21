@@ -13,6 +13,7 @@
         >
       <hr
         width="50%"
+        class="bg-secondary"
       />
         <div class="text-center mb-5">
             <span v-html="about.data"
