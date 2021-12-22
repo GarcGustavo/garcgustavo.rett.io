@@ -9,35 +9,32 @@
           href="/"
           @click.prevent="$emit('scroll', 'home')"
         >
-          <Logo :nightMode="!nightMode" />
+          <Logo/>
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-2">
               <a
-                class="nav-link"
+                class="nav-link text-light"
                 href="/about"
                 @click.prevent="$emit('scroll', 'about')"
-                :class="{ 'text-light': !nightMode }"
                 >About</a
               >
             </li>
             <li class="nav-item mx-2">
               <a
-                class="nav-link"
+                class="nav-link text-light"
                 href="/skills"
                 @click.prevent="$emit('scroll', 'skills')"
-                :class="{ 'text-light': !nightMode }"
                 >Skills</a
               >
             </li>
             <li class="nav-item mx-2 ">
               <a
-                class="nav-link"
+                class="nav-link text-light"
                 href="/portfolio"
                 @click.prevent="$emit('scroll', 'portfolio')"
-                :class="{ 'text-light': !nightMode }"
                 >Portfolio</a
               >
             </li>
@@ -54,22 +51,14 @@ import info from "../../info";
 
 export default {
   name: "Navbar",
-  props: {
-    nightMode: {
-      type: Boolean,
-    },
-  },
   data() {
     return {
-      navbarConfig: info.config.navbar,
-      localNightMode: this.nightMode,
+      navbarConfig: info.config.navbar
     };
   },
   components: {
     Logo,
-  },
-  methods: {
-  },
+  }
 };
 </script>
 

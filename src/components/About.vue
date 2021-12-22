@@ -16,8 +16,11 @@
         class="bg-secondary align-center"
       />
         <div class="text-center mx-auto mt-5 mb-5 col-md-8">
-            <span v-html="about.data"
-            ></span>
+            <span v-html="about.description1"></span>
+            <br><br>
+            <span v-html="about.description2"></span>
+            <br><br>
+            <span v-html="about.description3"></span>
         </div>
       </div>
     </div>
@@ -40,7 +43,12 @@ export default {
   data() {
     return {
       about: {
-        data: info.description,
+        description1: 
+        info.description1,
+        description2: 
+        info.description2,
+        description3: 
+        info.description3,
       },
     };
   },

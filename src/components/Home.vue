@@ -14,26 +14,36 @@
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-6 mx-auto pt-2">
           <span class="home-title font-weight-bold"> Gustavo A. Reyes Carrion</span>
-          <p class="home-title-sub"> Software Engineer</p>
-          <div class="row mx-auto mt-0 mb-2">
-            <p class="mb-0 mr-3"> Email: </p>
+          <p class="home-title-sub mb-0"> Software Engineer</p>
+          <p class="home-title-sub2 mt-0 mb-3"> B.S. in Computer Engineering</p>
+
+          <div class="row mx-auto pt-3 mb-0">
+            <p class="mb-0 mr-3"> Contact: </p>
             <p v-html="email"></p>
           </div>
-          <div class="text-left pb-4">
-            <button
-              class="btn btn-outline-secondary mt-2 mr-3"
-              @click="open('linkedin')"
-              v-tooltip.bottom="'LinkedIn'"
-            >
-              <i class="fab fa-linkedin"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mt-2 mx-2"
-              @click="open('github')"
-              v-tooltip.bottom="'GitHub'"
-            >
-              <i class="fab fa-github"></i>
-            </button>
+          <div class="pb-4">
+            <row style="display: flex;">
+              <div class="col-md-3 text-left">
+                <p class="home-title-sub2 mt-3 ml-0 mb-1">LinkedIn</p>
+                <button
+                  class="btn btn-outline-secondary ml-2"
+                  @click="open('linkedin')"
+                  v-tooltip.bottom="'LinkedIn'"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </button>
+              </div>
+              <div class="col-md-3 text-center">
+                <p class="home-title-sub2 mt-3 ml-3 mb-1">Github</p>
+                <button
+                  class="btn btn-outline-secondary"
+                  @click="open('github')"
+                  v-tooltip.bottom="'GitHub'"
+                >
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </row>
           </div>
         </div>
       </div>
@@ -87,6 +97,10 @@ export default {
 }
 .home-title-sub {
   font-size: 24px;
+  font-weight: 500;
+}
+.home-title-sub2 {
+  font-size: 14px;
   font-weight: 500;
 }
 

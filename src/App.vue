@@ -52,12 +52,6 @@ export default {
     });
   },
   methods: {
-    switchMode(mode) {
-      if (this.config.use_cookies) {
-        this.$cookie.set("nightMode", mode);
-      }
-      this.nightMode = mode;
-    },
     scrollTo(ele) {
       if (ele == "home") {
         this.$router.push(`/`).catch(()=>{});

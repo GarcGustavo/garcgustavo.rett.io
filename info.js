@@ -9,11 +9,18 @@ let info = {
     }
   },
   email: "greyescarrion@gmail.com",
-  description:
+  description1:
     "My name is Gustavo, I'm a software engineer and full-stack web developer based in NY. \
-    This website is meant to serve as a portfolio and devlog for my latest projects. \
+    I graduated in 2019 with a B.S. in Computer Engineering from the University of Puerto Rico\
+    and have been working as a software engineer ever since.",
+  description2:
+    "Most of my current work involves image processing, AI, and geo-spatial software development.\
+    However I have plenty of current and past projects that mainly focus on full-stack web and game development.\
+    I try to grow those skillsets by working on fun personal projects in my spare time.",
+  description3:
+    "This website is meant to serve as a portfolio and devlog for my latest work. \
     I intend to fill out this portfolio with a variety of projects, mostly as practice \
-    for new concepts I want to learn. Feel free to contact me if you're interested in my work.",
+    for new concepts I want to learn. Feel free to contact me if you're interested in my work or have any questions.",
   links: {
     linkedin: "https://www.linkedin.com/in/gustavo-reyes-886423129/",
     github: "https://github.com/GarcGustavo"
@@ -33,7 +40,7 @@ let info = {
         "C#",
         "C/C++",
         "Python",
-        "Javascript"],
+        "HTML/CSS/Javascript"],
       icon: "fa fa-code"
     },
     {
@@ -41,28 +48,49 @@ let info = {
       info: [
         "Vue.js",
         "React.js",
-        "Bootstrap",
-        "Unity"
+        "Bootstrap"
       ],
-      icon: "fa fa-cubes"
+      icon: "fa fa-laptop-code"
     },
     {
       title: "Backend",
       info: [
-        "Node.js",
         "Django",
         ".NET",
-        "MySQL", 
-        "PostgreSQL"],
-      icon: "fas fa-laptop-code"
-    }
+        "Node.js",
+        "MySQL/PostgreSQL"],
+      icon: "fas fa-cubes"
+    },
+    {
+      title: "Tools",
+      info: [
+        "Git/TortoiseSVN",
+        "Jira/Confluence",
+        "Jenkins and Docker"],
+      icon: "fas fa-tools"
+    },
+    {
+      title: "Engines",
+      info: [
+        "Unity",
+        "Unreal Engine"],
+      icon: "fas fa-gamepad"
+    },
+    {
+      title: "Interests",
+      info: [
+        "Game development",
+        "Web development",
+        "Rock Climbing"],
+      icon: "fas fa-volleyball-ball"
+    },
+
   ],
   portfolio: [
     {
       name: "Test Project",
       pictures: [
         {
-          img: require("./src/assets/portfolio/myflix.com/1.png")
         }
       ],
       category: "Web App",
@@ -75,7 +103,6 @@ let info = {
       name: "Test Project",
       pictures: [
         {
-          img: require("./src/assets/portfolio/myflix.com/1.png")
         }
       ],
       category: "Web App",
@@ -88,7 +115,7 @@ let info = {
       name: "Test Project",
       pictures: [
         {
-          img: require("./src/assets/portfolio/myflix.com/1.png")
+          //img: require("")
         }
       ],
       category: "Web App",

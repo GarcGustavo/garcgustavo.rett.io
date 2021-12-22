@@ -1,8 +1,7 @@
 <template>
   <div class="logo-div">
     <span
-      class="logo-title-name"
-      :class="{ pgray: !nightMode, 'text-light': nightMode }"
+      class="logo-title-name text-light"
       >{{ name }}</span
     >
     <span class="logo-title-dot pblue">{{ dot }}</span>

@@ -1,11 +1,6 @@
 <template>
   <div
-    class="py-4 p-st"
-    :class="{
-      'bg-light': nightMode,
-      'bg-dark2': !nightMode,
-      'text-light': !nightMode,
-    }"
+    class="py-4 p-st bg-dark2 text-light"
   >
     <div class="container">
       <div
@@ -29,20 +24,57 @@
         data-aos-once="true"
         data-aos-duration="1000">
         <span class="title text-center"> UNDER CONSTRUCTION </span>
+        <div class="card-deck" hidden>
+          <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
+              <div class="card-body">
+                <h4 class="card-title">E-commerce Website</h4>
+                <p class="card-text">UNDER CONSTRUCTION</p>
+                <button type="button" class="btn mt-3">
+                  Launch demo
+                </button>
+            </div>
+          </div>
+          <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
+              <div class="card-body">
+                <h4 class="card-title">Unity Rail Movement</h4>
+                <p class="card-text">UNDER CONSTRUCTION</p>
+                <button type="button" class="btn mt-3">
+                  Launch demo
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck" hidden>
+          <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
+              <div class="card-body">
+                <h4 class="card-title">Interactive Website</h4>
+                <p class="card-text">UNDER CONSTRUCTION</p>
+                <button type="button" class="btn mt-3">
+                  Launch demo
+                </button>
+            </div>
+          </div>
+          <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
+              <div class="card-body">
+                <h4 class="card-title">Unity Camera Shaders</h4>
+                <p class="card-text">UNDER CONSTRUCTION</p>
+                <button type="button" class="btn mt-3">
+                  Launch demo
+                </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script>
-//import Card from "./helpers/Card";
 import info from "../../info";
 
 export default {
   name: "Portfolio",
   components: {
-    //Card
   },
   props: {
     nightMode: {
