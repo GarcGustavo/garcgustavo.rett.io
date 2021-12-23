@@ -88,6 +88,10 @@ let info = {
   ],
   portfolio: [
     {
+      project1: require("./src/assets/logo.png"),
+      project2: require("./src/assets/logo.png"),
+      project3: require("./src/assets/logo.png"),
+      project4: require("./src/assets/logo.png"),
       name: "Test Project",
       pictures: [
         {

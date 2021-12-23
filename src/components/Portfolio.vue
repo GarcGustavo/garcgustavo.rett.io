@@ -23,43 +23,50 @@
         data-aos="fade"
         data-aos-once="true"
         data-aos-duration="1000">
-        <span class="title text-center"> UNDER CONSTRUCTION </span>
-        <div class="card-deck" hidden>
+        <div class="row">
+          <span class="text-light text-center col-md-8 mt-2 mb-3 mx-auto">This section is a work-in-progress, each project will be filled out in the following days with more detailed descriptions, images, and demos.</span>
+        </div>
+        <div class="card-deck">
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">E-commerce Website</h4>
-                <p class="card-text">UNDER CONSTRUCTION</p>
-                <button type="button" class="btn mt-3">
-                  Launch demo
+                <img class="project-img mt-2 mb-3" :src="project1" >
+                <p class="card-text mt-4">An e-commerce business website example with functioning navbar and checkout system.</p>
+                <button type="button" class="btn mt-3 bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
+                  View
                 </button>
             </div>
           </div>
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">Unity Rail Movement</h4>
-                <p class="card-text">UNDER CONSTRUCTION</p>
-                <button type="button" class="btn mt-3">
-                  Launch demo
+                <img class="project-img mt-2 mb-3" :src="project2" >
+                <p class="card-text mt-4">A starfox-esque game with a rail-movement system built by using Unity's Cinemachine.</p>
+                <button type="button" class="btn mt-3 bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
+                  View
                 </button>
             </div>
           </div>
         </div>
-        <div class="card-deck" hidden>
+        <div class="card-deck">
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
-                <h4 class="card-title">Interactive Website</h4>
-                <p class="card-text">UNDER CONSTRUCTION</p>
-                <button type="button" class="btn mt-3">
-                  Launch demo
+                <h4 class="card-title">CRUD Example</h4>
+                <img class="project-img mt-2 mb-3" :src="project3">
+                <p class="card-text mt-3">A simple web application that demonstrates CRUD operations in a simple vuejs webapp.</p>
+                <button type="button" class="btn mt-3 bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
+                  View
                 </button>
             </div>
           </div>
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">Unity Camera Shaders</h4>
-                <p class="card-text">UNDER CONSTRUCTION</p>
-                <button type="button" class="btn mt-3">
-                  Launch demo
+                <img class="project-img mt-2 mb-3" :src="project4" >
+                <p class="card-text mt-3">A unity scene that shows the effects of various shaders on the player's camera. 
+                  A quick way to add visual flair to small games.</p>
+                <button type="button" class="btn bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
+                  View
                 </button>
             </div>
           </div>
@@ -77,9 +84,6 @@ export default {
   components: {
   },
   props: {
-    nightMode: {
-      type: Boolean,
-    },
   },
   data() {
     return {
@@ -93,10 +97,11 @@ export default {
       number: 3,
       showBtn: "show more",
       shower: 0,
+      project1: info.portfolio.project1,
+      project2: info.portfolio.project2,
+      project3: info.portfolio.project3,
+      project4: info.portfolio.project4,
       data: [
-        '<div class="example-slide">Slide 1</div>',
-        '<div class="example-slide">Slide 2</div>',
-        '<div class="example-slide">Slide 3</div>',
       ],
     };
   },
@@ -139,6 +144,11 @@ export default {
 </script>
 
 <style scoped>
+.project-img {
+  width: 100px; 
+  height: 100px;
+}
+
 .card-container {
   width: 300px;
   height: 300px;
