@@ -15,7 +15,7 @@ let info = {
     and have been working as a software engineer ever since.",
   description2:
     "Most of my current work involves image processing, AI, and geo-spatial software development.\
-    However I have plenty of current and past projects that mainly focus on full-stack web and game development.\
+    I also have plenty of current and past projects that mainly focus on full-stack web and game development.\
     I try to grow those skillsets by working on fun personal projects in my spare time.",
   description3:
     "This website is meant to serve as a portfolio and devlog for my latest work. \

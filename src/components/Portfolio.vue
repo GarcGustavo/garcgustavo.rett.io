@@ -30,8 +30,8 @@
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">E-commerce Website</h4>
-                <img class="project-img mt-2 mb-3" :src="project1" >
-                <p class="card-text mt-4">An e-commerce business website example with functioning navbar and checkout system.</p>
+                <img class="project-img mt-2 mb-3"  src="../assets/logo.png">
+                <p class="card-text mt-4">An e-commerce business website example with functioning navbar and checkout systems.</p>
                 <button type="button" class="btn mt-3 bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
                   View
                 </button>
@@ -40,7 +40,7 @@
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">Unity Rail Movement</h4>
-                <img class="project-img mt-2 mb-3" :src="project2" >
+                <img class="project-img mt-2 mb-3" src="../assets/unity.png" >
                 <p class="card-text mt-4">A starfox-esque game with a rail-movement system built by using Unity's Cinemachine.</p>
                 <button type="button" class="btn mt-3 bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
                   View
@@ -51,8 +51,8 @@
         <div class="card-deck">
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
-                <h4 class="card-title">CRUD Example</h4>
-                <img class="project-img mt-2 mb-3" :src="project3">
+                <h4 class="card-title">Vuejs CRUD webapp</h4>
+                <img class="project-img mt-2 mb-3" src="../assets/logo.png">
                 <p class="card-text mt-3">A simple web application that demonstrates CRUD operations in a simple vuejs webapp.</p>
                 <button type="button" class="btn mt-3 bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
                   View
@@ -62,7 +62,7 @@
           <div class="card mt-4 py-4 p-st bg-dark text-light" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">Unity Camera Shaders</h4>
-                <img class="project-img mt-2 mb-3" :src="project4" >
+                <img class="project-img mt-2 mb-3" src="../assets/unity.png" >
                 <p class="card-text mt-3">A unity scene that shows the effects of various shaders on the player's camera. 
                   A quick way to add visual flair to small games.</p>
                 <button type="button" class="btn bg-dark2 mt-3 navbar-item text-light border border-dark" hidden>
