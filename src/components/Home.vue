@@ -34,11 +34,21 @@
                 </button>
               </div>
               <div class="col-md-3 text-center">
-                <p class="home-title-sub2 mt-3 ml-3 mb-1">Github</p>
+                <p class="home-title-sub2 mt-3 ml-1 mb-1">Github</p>
                 <button
                   class="btn btn-outline-secondary"
                   @click="open('github')"
                   v-tooltip.bottom="'GitHub'"
+                >
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+              <div class="col-md-3 text-right">
+                <p class="home-title-sub2 mt-3 ml-2 mb-1">Devlog</p>
+                <button
+                  class="btn btn-outline-secondary"
+                  @click="open('devlog')"
+                  v-tooltip.bottom="'Devlog'"
                 >
                   <i class="fab fa-github"></i>
                 </button>
@@ -65,7 +75,8 @@ export default {
       name: info.name,
       email: info.email,
       linkedin: info.links.linkedin,
-      github: info.links.github
+      github: info.links.github,
+      devlog: info.links.devlog
     };
   },
   methods: {
@@ -76,6 +87,9 @@ export default {
           break;
         case "github":
           window.open(this.github, "_blank");
+          break;
+        case "devlog":
+          window.open(this.devlog, "_blank");
           break;
       }
     },

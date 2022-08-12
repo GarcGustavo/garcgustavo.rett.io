@@ -10,7 +10,7 @@ let info = {
   },
   email: "greyescarrion@gmail.com",
   description1:
-    "My name is Gustavo, I'm a software engineer and full-stack web developer based in NY. \
+    "Software engineer and full-stack web developer based in NY. \
     I graduated in 2019 with a B.S. in Computer Engineering from the University of Puerto Rico\
     and have been working as a software engineer ever since.",
   description2:
@@ -23,7 +23,8 @@ let info = {
     for new concepts I want to learn. Feel free to contact me if you're interested in my work or have any questions.",
   links: {
     linkedin: "https://www.linkedin.com/in/gustavo-reyes-886423129/",
-    github: "https://github.com/GarcGustavo"
+    github: "https://github.com/GarcGustavo",
+    devlog: "https://garcdev.com"
   },
   education: [
     {
