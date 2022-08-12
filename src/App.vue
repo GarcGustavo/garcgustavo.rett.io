@@ -8,7 +8,7 @@
         <div class="body">
           <About id="about"/>
           <Skills id="skills"/>
-          <Portfolio id="portfolio"/>
+          <!--<Portfolio id="portfolio"/>-->
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@ import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
+//import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import info from "../info";
 import { ParticlesBg } from "particles-bg-vue";
@@ -33,7 +33,7 @@ export default {
     Home,
     About,
     Skills,
-    Portfolio,
+    //Portfolio,
     Footer,
     ParticlesBg
   },

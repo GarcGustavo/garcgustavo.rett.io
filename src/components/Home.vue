@@ -23,8 +23,8 @@
           </div>
           <div class="pb-4">
             <row style="display: flex;">
-              <div class="col-md-3 text-left">
-                <p class="home-title-sub2 mt-3 ml-0 mb-1">LinkedIn</p>
+              <div class="col-md-3 text-center">
+                <p class="home-title-sub2 mt-3 mb-1 text-center">LinkedIn</p>
                 <button
                   class="btn btn-outline-secondary ml-2"
                   @click="open('linkedin')"
@@ -34,7 +34,7 @@
                 </button>
               </div>
               <div class="col-md-3 text-center">
-                <p class="home-title-sub2 mt-3 ml-1 mb-1">Github</p>
+                <p class="home-title-sub2 mt-3 mb-1 text-center">Github</p>
                 <button
                   class="btn btn-outline-secondary"
                   @click="open('github')"
@@ -43,14 +43,14 @@
                   <i class="fab fa-github"></i>
                 </button>
               </div>
-              <div class="col-md-3 text-right">
-                <p class="home-title-sub2 mt-3 ml-2 mb-1">Devlog</p>
+              <div class="col-md-3 text-center">
+                <p class="home-title-sub2 mt-3 mb-1 text-center">Devlog</p>
                 <button
                   class="btn btn-outline-secondary"
                   @click="open('devlog')"
                   v-tooltip.bottom="'Devlog'"
                 >
-                  <i class="fab fa-github"></i>
+                  <i class="fab fa-unity"></i>
                 </button>
               </div>
             </row>
