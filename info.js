@@ -10,17 +10,18 @@ let info = {
   },
   email: "greyescarrion@gmail.com",
   description1:
-    "Software engineer and full-stack web developer based in NY. \
+    "I'm a Software Engineer focused on .NET development based in NY. \
     I graduated in 2019 with a B.S. in Computer Engineering from the University of Puerto Rico\
     and have been working as a software engineer ever since.",
   description2:
-    "Most of my current work involves image processing, AI, and geo-spatial software development.\
-    I also have plenty of current and past projects that mainly focus on full-stack web and game development.\
-    I try to grow those skillsets by working on fun personal projects in my spare time.",
+    "Most of my current work involves using .NET to construct a variety of desktop and web applications \
+    for enterprise printing press software. I have a passion for making \
+    fun games, webapps, and other projects in my spare time.\
+    ",
   description3:
-    "This website is meant to serve as a portfolio and devlog for my latest work. \
-    I intend to fill out this portfolio with a variety of projects, mostly as practice \
-    for new concepts I want to learn. Feel free to contact me if you're interested in my work or have any questions.",
+    "I'm currently re-working this site and my devlog to properly showcase some past projects. \
+    While this site may still be under active development \
+    please feel free to browse my Github or reach out to me if you have any questions.",
   links: {
     linkedin: "https://www.linkedin.com/in/gustavo-reyes-886423129/",
     github: "https://github.com/GarcGustavo",
@@ -41,51 +42,26 @@ let info = {
         "C#",
         "C/C++",
         "Python",
-        "HTML/CSS/Javascript"],
+        "Javascript"],
       icon: "fa fa-code"
     },
     {
       title: "Frameworks",
       info: [
-        "Vue.js",
-        "React.js",
-        "Bootstrap"
+        "Unity",
+        ".NET",
+        "VueJS"
       ],
       icon: "fa fa-laptop-code"
     },
     {
       title: "Backend",
       info: [
+        "NodeJS",
         "Django",
-        ".NET",
-        "Node.js",
         "MySQL/PostgreSQL"],
       icon: "fas fa-cubes"
-    },
-    {
-      title: "Tools",
-      info: [
-        "Git/TortoiseSVN",
-        "Jira/Confluence",
-        "Jenkins and Docker"],
-      icon: "fas fa-tools"
-    },
-    {
-      title: "Engines",
-      info: [
-        "Unity",
-        "Unreal Engine"],
-      icon: "fas fa-gamepad"
-    },
-    {
-      title: "Interests",
-      info: [
-        "Game development",
-        "Web development",
-        "Rock Climbing"],
-      icon: "fas fa-volleyball-ball"
-    },
-
+    }
   ],
   portfolio: [
     {
